@@ -8,6 +8,9 @@ namespace Fibonacci_Number
         static int Get_Fibonacci (int number)
         {
             int f0 = 0, f1 = 1;
+	    
+	    if(number==0) return f0;
+	    if(number==1) return f1;
 
             for (int i = 2; i <= number; i++)
             {
@@ -17,6 +20,12 @@ namespace Fibonacci_Number
             }
             return f1;
         }
+
+	//static void FindFibonacciNumberInRange(int n){
+	    //for(int i = 0 ; i < n ; i++){
+		
+	    //}
+	//}
 
         static void Main(string[] args)
         {
