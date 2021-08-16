@@ -21,20 +21,29 @@ namespace Fibonacci_Number
             return f1;
         }
 
-	//static void FindFibonacciNumberInRange(int n){
-	    //for(int i = 0 ; i < n ; i++){
-		
-	    //}
-	//}
+	static void FindFibonacciNumberInRange(int n){
+	   for(int i = 0 ; i < n ; i++){
+		Console.WriteLine($"Fibonacci of item {i}");
+	    }
+	}
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Input your number:");
-            int number = int.Parse(Console.ReadLine());
+           
 
-            int fibo = Get_Fibonacci(number);
+           // int fibo = Get_Fibonacci(number);
 
-            Console.WriteLine(fibo);        
+           // Console.WriteLine(fibo);
+	   do{
+		
+	    	Console.WriteLine("Input your number:");
+            	int number = int.Parse(Console.ReadLine());
+		if(number > 20) {
+	             Console.WriteLine("You will get a large result @@");
+		}
+		FindFibonacciNumberInRange(number);
+		
+	   }while(number>20)
         }
     }
 }
